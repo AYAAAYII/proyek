@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio PKL - Biodata Diri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2.5rem;
+        }
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #3b82f6;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -0.5rem;
+            top: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background-color: #3b82f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .skill-bar {
+            height: 8px;
+            background-color: #e5e7eb;
+            border-radius: 4px;
+        }
+        .skill-progress {
+            height: 100%;
+            border-radius: 4px;
+            background-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-blue-600">Portofolio<span class="text-gray-800">PKL</span></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-blue-600 font-medium">Beranda</a>
+                    <a href="#about" class="hover:text-blue-600">Tentang</a>
+                    <a href="#pkl" class="hover:text-blue-600">Dokumen PKL</a>
+                    <a href="#portfolio" class="hover:text-blue-600">Portofolio</a>
+                    <a href="#contact" class="hover:text-blue-600">Kontak</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <img src="profil.jpg" alt="Foto diri formal dengan background biru muda, mengenakan kemeja putih rapi, dengan senyum ramah" class="rounded-lg shadow-xl mx-auto">
+            </div>
+            <div class="md:w-1/2 pl-0 md:pl-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Halo, Saya <span class="text-yellow-300">Adya rayzhan Arfhio</span></h1>
+                <h2 class="text-2xl md:text-3xl mb-6">Siswa PKL di <span class="font-semibold">DINAS KOMUNIKASI DAN IMFORMATIKA</span></h2>
+                <p class="text-xl mb-8">Selama 4 bulan ini, saya telah menjalani Program Praktik Kerja Lapangan dengan berbagai pengalaman berharga dan peningkatan skill.</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg transition-all">
+                        Hubungi Saya
+                    </a>
+                    <a href="#pkl" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-6 rounded-lg transition-all">
+                        Lihat Dokumentasi PKL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Tentang <span class="text-blue-600">Saya</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="ppp.jpg" alt="Potret setengah badan dengan latar belakang kantor modern, mengenakan pakaian formal dengan ekspresi profesional" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h3 class="text-2xl font-bold mb-6">Profil Pribadi</h3>
+                    <p class="mb-6 text-lg">Saya adalah siswa SMK jurusan [PENGEMBANGAN PERANGKAT LUNAK DAN GIM] yang saat ini sedang menjalani Praktik Kerja Lapangan (PKL) selama 4 bulan di [DINAS KOMUNIKASI DAN INFORMATIKA]. Saya memiliki minat yang besar dalam bidang [informatika] dan selalu bersemangat untuk belajar hal-hal baru.</p>
+                    
+                    <div class="mb-10">
+                        <h4 class="text-xl font-bold mb-4">Informasi Dasar</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <p class="font-semibold">Nama Lengkap:</p>
+                                <p class="text-gray-600">Adya Rayzhan Arfhio</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Jurusan:</p>
+                                <p class="text-gray-600">[PENGEMBANGAN PERANGKAT LUNAK DAN GIM]</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Sekolah:</p>
+                                <p class="text-gray-600">[SMK NEGERI 1 PEDAN]</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Tempat PKL:</p>
+                                <p class="text-gray-600">[DINAS KOMUNIKASI DAN INFORMATIKA]</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Durasi PKL:</p>
+                                <p class="text-gray-600">4 Bulan (1 JULI - 31 Oktober)</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Pembimbing:</p>
+                                <p class="text-gray-600">Endah kuswandani,S.Pd</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="text-xl font-bold mb-4">Keahlian Teknis</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-medium mb-1">[Berkomunikasi]</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-medium mb-1">[Bekerja]</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-medium mb-1">[Membuat Progam]</p>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PKL Documentation Section -->
+    <section id="pkl" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Dokumentasi <span class="text-blue-600">PKL</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-4 text-lg">Catatan dan dokumentasi selama 4 bulan menjalani Praktik Kerja Lapangan di [Nama Perusahaan]</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-calendar-alt text-xs"></i></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Minggu 1-2: Orientasi dan Pengenalan</h3>
+                        <p class="text-gray-600 mb-4">pengenalan lingkungan kominfo, menjaga lobi, menyeken berkas kominfo, membuat proyek kecil.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <img src="dokumentasi 1.jpg" alt="Sesi orientasi di ruang meeting dengan tim, menunjukkan presentasi di layar proyektor" class="rounded-lg">
+                            </div>
+                            <div>
+                                <img src="dokumentasi2.jpg" alt="Dokumen pedoman perusahaan yang diberikan saat orientasi, terlihat halaman-halaman dengan format profesional" class="rounded-lg">
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-tasks text-xs"></i></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Minggu 3-6: Pelatihan dan Tugas Awal</h3>
+                        <p class="text-gray-600 mb-4">Mendapatkan pelatihan teknis terkait pekerjaan dan mulai mengerjakan tugas-tugas kecil dengan pengawasan.</p>
+                        <ul class="list-disc pl-5 mb-4 space-y-2">
+                            <li>Mempelajari sistem dan tools yang digunakan</li>
+                            <li>Mengerjakan proyek kecil pertama</li>
+                            <li>Mengikuti sesi pelatihan internal</li>
+                        </ul>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0340144-77f3-4543-af16-24cce44fe457.png" alt="Sesi pelatihan di ruang kerja, menunjukkan mentor menjelaskan materi dengan monitor komputer di latar depan" class="rounded-lg">
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-chart-line text-xs"></i></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Minggu 7-12: Proyek Inti</h3>
+                        <p class="text-gray-600 mb-4">Terlibat aktif dalam proyek inti perusahaan dengan tanggung jawab yang lebih besar.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                            <div>
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3ee36cb-5795-4147-9799-1ce9a83848ba.png" alt="Screenshot antarmuka proyek yang dikerjakan, menunjukkan desain bersih dengan elemen UI modern" class="rounded-lg">
+                            </div>
+                            <div>
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a8423f6-f0fd-4b6a-8ea4-b59cc765e22a.png" alt="Dokumentasi kode program dengan syntax highlighting, menunjukkan struktur yang rapi" class="rounded-lg">
+                            </div>
+                            <div>
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e775ce4-e45d-4539-87c0-c0ad7f272056.png" alt="Meeting progress dengan pembimbing, menunjukkan sketsa dan catatan di whiteboard" class="rounded-lg">
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                            <h4 class="font-bold text-blue-800 mb-2">Pelajaran Penting:</h4>
+                            <p>Belajar mengelola proyek dengan timeline yang ketat, berkomunikasi efektif dengan tim, dan memecahkan masalah teknis secara mandiri.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"><i class="fas fa-graduation-cap text-xs"></i></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-2">Minggu 13-16: Penyelesaian dan Evaluasi</h3>
+                        <p class="text-gray-600 mb-4">Menyelesaikan proyek, dokumentasi akhir, dan evaluasi keseluruhan PKL.</p>
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-1">
+                                <h4 class="font-bold mb-2">Pencapaian:</h4>
+                                <ul class="list-disc pl-5 space-y-2">
+                                    <li>Menyelesaikan [jumlah] proyek/tugas</li>
+                                    <li>Meningkatkan kemampuan [skill tertentu]</li>
+                                    <li>Mendapatkan pengalaman nyata di industri</li>
+                                </ul>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-bold mb-2">Evaluasi Pembimbing:</h4>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <p>"[Nama Anda] telah menunjukkan perkembangan yang baik selama PKL dan mampu beradaptasi dengan lingkungan kerja profesional."</p>
+                                    <p class="text-right mt-2 font-medium">- Nama Pembimbing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Hasil <span class="text-blue-600">Karya</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-4 text-lg">Portofolio pekerjaan dan proyek yang dikerjakan selama PKL</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9d7bbd1-f3ff-40d7-b5ab-a61d9493f51f.png" alt="Tampilan antarmuka aplikasi yang dikembangkan selama PKL, menunjukkan dashboard dengan grafik dan menu navigasi" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Proyek Aplikasi [Nama]</h3>
+                        <p class="text-gray-600 mb-4">Deskripsi singkat tentang proyek, teknologi yang digunakan, dan kontribusi spesifik Anda.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cc0a393a-341b-4525-a0c4-7fb66a549e6c.png" alt="Dokumentasi laporan dalam bentuk presentasi, menunjukkan beberapa slide dengan tata letak profesional" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Laporan [Nama Laporan]</h3>
+                        <p class="text-gray-600 mb-4">Laporan analisis atau dokumentasi yang dibuat selama PKL beserta metodologi dan temuan.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Analisis</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Microsoft Office</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/39586bd8-81c4-4198-a8da-59ada265d40a.png" alt="Sistem database yang dibuat, menunjukkan diagram ER dan beberapa tampilan query" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sistem [Nama Sistem]</h3>
+                        <p class="text-gray-600 mb-4">Sistem atau modul yang dikembangkan, fungsionalitas utama, dan hasil implementasi.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MySQL</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Hubungi <span class="text-blue-600">Saya</span></h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+      <p class="max-w-2xl mx-auto mt-4 text-lg">Silakan menghubungi saya untuk informasi lebih lanjut</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <!-- Kontak Kiri -->
+          <div class="md:w-1/2 bg-blue-600 text-white p-8">
+            <h3 class="text-2xl font-bold mb-6">Informasi Kontak</h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i class="fas fa-envelope mr-4 text-xl"></i>
+                <p>adyarayzhanarfhio@gmail.com</p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone-alt mr-4 text-xl"></i>
+                <p>+62 812-1559-7229</p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-4 text-xl"></i>
+                <p>SMK NEGERI 1 PEDAN</p>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h4 class="text-xl font-bold mb-4">Tautan Sosial</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 hover:text-white transition-colors">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 hover:text-white transition-colors">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 hover:text-white transition-colors">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulir Kanan -->
+          <div class="md:w-1/2 p-8">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Kirim Pesan</h3>
+            <form action="https://formspree.io/f/mdkzqona" method="POST" id="contactForm">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" name="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                <textarea name="message" id="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <button type="submit" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors w-full">
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Script untuk menampilkan alert saat berhasil kirim -->
+<script>
+  const form = document.getElementById("contactForm");
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      alert("Pesan berhasil dikirim!");
+      form.reset();
+    } else {
+      alert("Gagal mengirim pesan. Silakan coba lagi.");
+    }
+  });
+</script>
+
+</body>
+</html>
